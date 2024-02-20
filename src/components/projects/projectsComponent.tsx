@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import ProjectModal from '../projects/projectsModal'
 
 
 
@@ -12,51 +13,52 @@ type ProjectComponentProps = {
     tecnologies: string;
     url: string;
 };
-
 const ProjectComponent: React.FC<ProjectComponentProps> = ({
     id, projectTitle, banner, resume, tecnologies, url }) => {
 
     return (
-        <div className="flex 
+        <main>
+            <div className="flex 
         flex-col 
         w-full
+        relative
         gap-5
         border-2
         rounded-xl
-        bg-bg-primary ">
-            <button className="flex justify-center">
-                <span className="invisible 
-                hover:visible
-                h-full
-                w-full">Veja Mais</span>
-                <Image src={banner} alt="aiImage"
-                    className='w-full h-64 rounded-lg
-                hover:opacity-50' width={500} height={400} />
-            </button>
-            {/* <div className="flex 
-            
-            flex-col 
-            text-xl 
-            py-5
-            text-text-color
-            items-center
-            gap-5">
-                <h2 className="text-xl font-bold uppercase">{projectTitle}</h2>
-                <p className="w-3/4 text-justify text-lg">{resume}</p>
-                <p className="w-2/4 
-                opacity-40
-                text-justify 
-                text-sm">{tecnologies}</p>
+        ">
+                <button className="flex justify-center items-center relative group">
+                    <Image src={banner} alt="aiImage"
+                        className='w-full h-full rounded-lg 
+                    ' width={500} height={400} />
+                    <div className="absolute inset-0 bg-black 
+                bg-opacity-0 
+                group-hover:bg-opacity-50
+                transition-all 
+                duration-500 
+                flex items-center 
+                justify-center">
+                        <span className="text-white
+                    opacity-0 
+                    group-hover:opacity-100
+                    uppercase
+                    text-2xl
+                    transition-all 
+                    duration-500">Veja mais</span>
+                    </div>
+                </button>
             </div>
-            <button className="py-5 hover:text-primary">
-                <a href="" className="">
-                    Link Teste
-                </a>
-            </button> */}
-        </div>
+        </main>
 
     )
 };
 
 export default ProjectComponent;
 
+
+
+{/* <div class="relative">
+  <img src="sua-imagem.jpg" alt="Imagem de fundo" class="w-full h-full">
+  <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-50 transition-all duration-500 flex items-center justify-center">
+    <p class="text-white opacity-0 hover:opacity-100 transition-all duration-500">Seu texto aqui</p>
+  </div>
+</div> */}
