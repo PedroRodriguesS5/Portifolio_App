@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import { GlobalContextProvider } from "./Context/project";
 import "./css/globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const jetBrains = JetBrains_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Pedro (Ochefe) da Silva",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>
+      <body className={jetBrains.className}>
         <GlobalContextProvider>
           {children}
         </GlobalContextProvider>

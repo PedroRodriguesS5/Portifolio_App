@@ -3,35 +3,34 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-  --text-color-start-hx: #66645c;
-  --text-color-mid-hx: #738366;
-  --text-color-end-hx: #7887ad;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+    --text-color-start-hx: #66645c;
+    --text-color-mid-hx: #738366;
+    --text-color-end-hx: #7887ad;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
 }
 
 body {
-  color: white;
+    color: white;
 
-  font-size: 62.5%;
-  background: #252525;
-  font-family: 'Times New Roman', Times, serif;
-  background-repeat: no-repeat;
-  height: 100vh;
-  /* rgb(var(--background-start-rgb)); */
+    background: #252525;
+    font-family: 'Times New Roman', Times, serif;
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* rgb(var(--background-start-rgb)); */
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .text-balance {
+        text-wrap: balance;
+    }
 }

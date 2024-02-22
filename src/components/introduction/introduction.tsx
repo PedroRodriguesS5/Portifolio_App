@@ -7,14 +7,14 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { blueGrey } from '@mui/material/colors';
 export default function Introduction() {
     return (
-        <>
+        <section className='py-32'>
             <section className='flex 
-            h-full 
-            w-full 
+            w-full
+             h-full
             justify-center 
             items-center 
             text-lg 
-            py-5'>
+            py-32'>
                 <section className='flex flex-col gap-5 justify-center w-2/4 px-24'>
                     <div className='flex flex-col gap-5 w-full justify-center'>
                         <h2 id="gradiend-color" className="uppercase 
@@ -27,10 +27,13 @@ export default function Introduction() {
                     <div className='flex w-full  gap-5'>
                         <a href="https://www.linkedin.com/in/pedro-da-silva-856776245/"
                             target='_blank'>
-                            <LinkedInIcon sx={{ fontSize: 45, color: blueGrey[500] }} />
+                            <LinkedInIcon sx={{ fontSize: 45, color: blueGrey[500] }}
+                                className='hover:opacity-50' />
                         </a>
-                        <a href="https://github.com/PedroRodriguesS5" target='_blank'>
-                            <GitHubIcon sx={{ fontSize: 45, color: blueGrey[500] }} />
+                        <a href="https://github.com/PedroRodriguesS5"
+                            target='_blank'>
+                            <GitHubIcon sx={{ fontSize: 45, color: blueGrey[500] }}
+                                className='hover:opacity-50' />
                         </a>
                         <div className='flex '>
                             <button className=' 
@@ -38,14 +41,16 @@ export default function Introduction() {
                         bg-button-color
                         text-lg
                         p-2
+                        hover:opacity-50
                         text-gray-300'>Download CV</button>
                         </div>
                     </div>
                 </section>
                 <section className='flex justify-center w-2/4'>
-                    <Image src={AiPhoto} alt="aiImage" className='rounded-full w-2/4' />
+                    <Image src={AiPhoto} alt="aiImage" className='rounded-full 
+                    w-2/4' />
                 </section>
             </section >
-        </  >
+        </section>
     )
 }

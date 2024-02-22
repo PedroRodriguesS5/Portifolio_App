@@ -3,6 +3,7 @@
 import { useContext, createContext, useState, Dispatch, SetStateAction } from "react";
 
 type DataType = {
+    id: number;
     projectTitle: string;
     banner: any;
     resume: string;
@@ -20,7 +21,7 @@ const GlobalContext = createContext<ContextProps>({
     setData: (): DataType[] => []
 });
 
-export const GlobalContextProvider = ({ children }) => {
+export const GlobalContextProvider = ({ children }: any) => {
     const [data, setData] = useState<DataType[]>([]);
     return (
         <GlobalContext.Provider value={{
