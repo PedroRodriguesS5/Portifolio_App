@@ -43,7 +43,7 @@ const projectsInfo: {
     id: 5,
     projectTitle: "Player Music",
     resume: "Player de música, realizado como trabalho academico no curso da cubos academy",
-    tecnologies: "ReactJs, javaScript, css, ",
+    tecnologies: "ReactJs, javaScript, css",
     banner: FinalProjectImg,
     url: 'https://github.com/PedroRodriguesS5/Delivery-Project',
 },

@@ -19,9 +19,9 @@ module.exports = {
     extend: {
       colors: {
         "button-color": "#607D8F",
-        "bg-primary": "#252525",
+        "bg-primary": "#161616",
         "text-color": "#ffc82f",
-        "bg-secondary": "#646060",
+        "bg-secondary": "#1C1C1C",
       },
       keyframes: {
         "accordion-down": {
