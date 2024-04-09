@@ -26,15 +26,17 @@ export default function TechsPage() {
                 items-center 
                 justify-center
                 p-5
-                xl:w-48
-                xl:h-48
-                md:max-lg:w-24
-                md:max-lg:h-32
+                2xl:w-48
+                2xl:h-48
+                xl:max-2xl:w-32
+                xl:max-2xl:h-[150px]
+                md:max-xl:w-24
+                md:max-xl:h-32
                 bg-bg-primary ">
                         <Image src={t.imgTech} alt="aiImage" className="
                                     rounded-xl h-full"/>
                         <h2 className="opacity-40 md:max-lg:text-sm
-                        px-6 
+                        px-10 
                         xl:text-lg">{t.tech}</h2>
                     </div>
                 )}

@@ -34,8 +34,9 @@ export default function ProjectsPage() {
                             relative
                             border-2
                             rounded-xl
-                            xl:h-[300px]
-                            xl:w-[500px]
+                            2xl:h-[300px]
+                            2xl:w-[450px]
+                            xl:max-2xl:w-[400px]
                             sm:max-md:h-[100px]
                             sm:max-md:w-[200px]
                             md:max-lg:w-[250px]
