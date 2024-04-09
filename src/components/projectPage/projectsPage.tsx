@@ -22,7 +22,7 @@ export default function ProjectsPage() {
          py-32 
          px-10 
          w-full">
-            <h1 className="text-4xl text-white font-bold uppercase">Projetos</h1>
+            <h1 className="text-4xl text-white font-bold">Projetos</h1>
             <div className="grid 
             grid-cols-3
             gap-12 
@@ -34,6 +34,8 @@ export default function ProjectsPage() {
                             relative
                             border-2
                             rounded-xl
+                            h-[300px]
+                            w-[500px]
                             ">
                             <DialogTrigger asChild >
                                 <Button className="
@@ -43,7 +45,7 @@ export default function ProjectsPage() {
                                 h-full
                                 group">
                                     <Image src={project.banner} alt="aiImage" className="
-                                    rounded-xl h-full"/>
+                                    rounded-xl h-full w-[500px]"/>
                                     <div className="absolute 
                                         flex
                                         justify-center 

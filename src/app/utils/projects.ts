@@ -1,4 +1,8 @@
-import FinalProjectImg from '../assets/finalProject.png';
+import FinalProjectImg from '../assets/projectsImg/finalProject.png';
+import SocialMediaImg from '../assets/projectsImg/social_media_img.jpeg';
+import todoListImg from '../assets/projectsImg/todo_list_img.jpeg';
+import deliveryImg from '../assets/projectsImg/delivery_img.jpg';
+import playerMusicIMg from '../assets/projectsImg/player_music_img.png';
 
 const projectsInfo: {
     id: number,
@@ -20,7 +24,7 @@ const projectsInfo: {
     projectTitle: "Social Media Api",
     resume: "Api para uma rede social com posts e interação entre usuários.",
     tecnologies: `Javascript, nodeJs, express, knexJs`,
-    banner: FinalProjectImg,
+    banner: SocialMediaImg,
     url: 'https://github.com/PedroRodriguesS5/Api-social-media',
 },
 {
@@ -28,7 +32,7 @@ const projectsInfo: {
     projectTitle: "ToDo List",
     resume: "To-do list desenvolvida em java e spring boot",
     tecnologies: "Java, Spring Boot, maven, docker",
-    banner: FinalProjectImg,
+    banner: todoListImg,
     url: 'https://github.com/PedroRodriguesS5/ToDo-List',
 },
 {
@@ -36,7 +40,7 @@ const projectsInfo: {
     projectTitle: "Delivery Api Project",
     resume: "Delivery Api para restaurantes e lanchonete",
     tecnologies: "NestJs, PrismaORM, typeScript, postgreSQL",
-    banner: FinalProjectImg,
+    banner: deliveryImg,
     url: 'https://github.com/PedroRodriguesS5/Delivery-Project',
 },
 {
@@ -44,7 +48,7 @@ const projectsInfo: {
     projectTitle: "Player Music",
     resume: "Player de música, realizado como trabalho academico no curso da cubos academy",
     tecnologies: "ReactJs, javaScript, css",
-    banner: FinalProjectImg,
+    banner: playerMusicIMg,
     url: 'https://github.com/PedroRodriguesS5/Delivery-Project',
 },
     ]

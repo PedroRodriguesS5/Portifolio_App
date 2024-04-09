@@ -6,18 +6,22 @@ import Image from "next/image";
 export default function TechsPage() {
 
     return (
-        <div className="
+        <div className="flex flex-col 
+        items-center
+        gap-24
+        py-32
+         bg-bg-secondary">
+            <h2 className="text-4xl text-white font-bold">Tecnologias</h2>
+            <div className="
         grid
         grid-cols-5
         grid-rows-2    
         items-center 
         w-full 
-        py-24
         px-32
-        gap-4
-        bg-bg-secondary">
-            {tecnologies.map((t, i: number) =>
-                <div key={i} className="flex 
+        gap-4">
+                {tecnologies.map((t, i: number) =>
+                    <div key={i} className="flex 
                 flex-col 
                 items-center 
                 justify-center
@@ -25,11 +29,12 @@ export default function TechsPage() {
                 w-48
                 h-48
                 bg-bg-primary ">
-                    <Image src={t.imgTech} alt="aiImage" className="
+                        <Image src={t.imgTech} alt="aiImage" className="
                                     rounded-xl h-full"/>
-                    <h2 className="opacity-40 text-lg">{t.tech}</h2>
-                </div>
-            )}
+                        <h2 className="opacity-40 text-lg">{t.tech}</h2>
+                    </div>
+                )}
+            </div>
         </div>
     )
 }

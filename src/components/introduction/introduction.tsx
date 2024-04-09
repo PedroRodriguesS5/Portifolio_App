@@ -6,6 +6,11 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 import { blueGrey } from '@mui/material/colors';
 export default function Introduction() {
+    const openCurriculo = () => {
+        const arquivo: string = "Curriculo_F.pdf";
+
+        window.open(arquivo, "_blank");
+    };
     return (
         <section className='py-32'>
             <section className='flex 
@@ -35,14 +40,14 @@ export default function Introduction() {
                             <GitHubIcon sx={{ fontSize: 45, color: blueGrey[500] }}
                                 className='hover:opacity-50' />
                         </a>
-                        <div className='flex '>
+                        <div className='flex ' >
                             <button className=' 
                         rounded-lg 
                         bg-button-color
                         text-lg
                         p-2
                         hover:opacity-50
-                        text-gray-300'>Download CV</button>
+                        text-gray-300' onClick={openCurriculo}>Download CV</button>
                         </div>
                     </div>
                 </section>
