@@ -11,7 +11,8 @@ export default function About() {
         justify-center
         items-center
         gap-12
-        py-32 
+        py-32
+        w-full 
         bg-bg-secondary">
             <h2 className="text-4xl font-bold">Sobre Mim</h2>
             <div className="p-24 leading-10 text-xl opacity-70">

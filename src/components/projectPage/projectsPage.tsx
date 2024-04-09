@@ -34,8 +34,12 @@ export default function ProjectsPage() {
                             relative
                             border-2
                             rounded-xl
-                            h-[300px]
-                            w-[500px]
+                            xl:h-[300px]
+                            xl:w-[500px]
+                            sm:max-md:h-[100px]
+                            sm:max-md:w-[200px]
+                            md:max-lg:w-[250px]
+                            lg:max-xl:w-[300px]
                             ">
                             <DialogTrigger asChild >
                                 <Button className="
