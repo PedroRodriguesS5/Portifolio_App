@@ -25,9 +25,10 @@ export default function About() {
             </div>
             <div className="flex flex-col gap-5 justify-center items-center ">
                 <p className="text-2xl">Me envie um e-mail</p>
-                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" className="flex 
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"
+                    className="flex 
                 gap-2 hover:underline text-button-color text-xl">
-                    <Mail /><h2>pedroxbrs@gmaail.com</h2>
+                    <Mail /><h2>pedroxbrs@gmail.com</h2>
                 </a>
             </div>
         </section>
